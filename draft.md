@@ -20,6 +20,8 @@ I'd be happy if this tutorial helps your curiosity to create a game.
 Part I: Get excited
 ----
 
+## Preparation
+
 > Here we bang! -- Wada-don, "Taiko no Tatsujin"
 
 Firstly, we have to ensure that you have installed GHC. [Haskell Platform](https://www.haskell.org/platform/) is an easy way to install GHC. Note that using 32-bit version of GHC is safer to avoid problems even if your platform is Windows x64.
@@ -42,6 +44,8 @@ If it fails, please check if the development library for the backend (e.g. libas
 Then install `call`.
 
 > $ cabal install call
+
+## A simple game
 
 Now, think of a very simple game: There's a circle, and another circle(s) is approaching. You touch in exact timing when the another circle overlapped the original one. How do we implement this? 
 

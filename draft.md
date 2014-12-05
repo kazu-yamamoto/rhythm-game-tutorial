@@ -27,7 +27,7 @@ Firstly, we have to ensure that you have installed GHC. [Haskell Platform](https
 We have to choose some from several backends:
 
 * If you are using Windows Vista or later, WASAPI is good choice. DirectSound is an another candidate.
-* If you are Mac user, you probably like to use CoreAudio.
+* If you are a Mac user, you probably like to use CoreAudio.
 * On Linux or FreeBSD, we support ALSA or OSS or JACK. If you don't know the differences, choose ALSA for now.
 * If you have an ASIO-compatible audio device, and you have registered to Steinberg as a 3rd-party developer, and you desire high-quality sound or low latency, using ASIO is worth.
 
@@ -35,7 +35,7 @@ Very well, let's build `bindings-portaudio`:
 
 > $ cabal install bindings-portaudio -fWASAPI
 
-Rewrite `WASAPI` according to your choice. If you choosed WASAPI, leave it as is, of course.
+Rewrite `WASAPI` according to your choice if necessary.
 
 If it fails, please check if the development library for the backend (e.g. libasound2-dev, libportaudio19) is installed. If it throws up something messy, please report to [the GitHub repository](https://github.com/fumieval/bindings-portaudio/issues).
 
@@ -43,7 +43,7 @@ Then install `call`.
 
 > $ cabal install call
 
-Now, think of a very simple game: There's a circle, and another circle(s) is approaching. You touch　in exact timing when the another circle overlapped the original one. How do we implement this? 
+Now, think of a very simple game: There's a circle, and another circle(s) is approaching. You touch in exact timing when the another circle overlapped the original one. How do we implement this? 
 
 First, express timings as a set of time. Given timings and "life span" of circles, we can compute positions of visible circles from the current time.
 

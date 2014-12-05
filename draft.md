@@ -20,7 +20,7 @@ I'd be happy if this tutorial helps your curiosity to create a game.
 Part I: Get excited
 ----
 
-## Preparation
+### Preparation
 
 > Here we bang! -- Wada-don, "Taiko no Tatsujin"
 
@@ -45,7 +45,7 @@ Then install `call`.
 
 > $ cabal install call
 
-## A simple game
+### A simple game
 
 Now, think of a very simple game: There's a circle, and another circle(s) is approaching. You touch in exact timing when the another circle overlapped the original one. How do we implement this? 
 
